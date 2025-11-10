@@ -1,0 +1,42 @@
+html, body { height: 100%; }
+body {
+    font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    color: aliceblue;
+}
+
+a {
+    color:rgb(146, 255, 255);
+    text-decoration-line: none;
+}
+
+a:hover{
+    text-decoration: underline rgb(0, 242, 255);
+}
+
+nav {
+    margin : 0;
+    border:0;
+    padding: 0;
+
+    background-color: rgba(0, 0, 0, 0.508);
+}
+
+ul {
+    display: flex;
+    flex-direction:row;
+    list-style:none;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.background-video{
+    position: fixed; 
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
