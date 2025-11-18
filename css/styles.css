@@ -2,6 +2,7 @@ html, body {
     margin: 0; 
     height: 100%; 
 }
+
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -9,7 +10,6 @@ body {
     font-style: normal;
     color: aliceblue;
 
-    /*чтобы footer снизу отобразился*/
     display: flex;
     flex-direction: column;
 }
@@ -43,7 +43,7 @@ a {
     text-decoration-line: none;
 }
 
-a:hover, a:focus-visible{
+a:hover, a:focus-visible {
     text-decoration: underline;
     color: aliceblue;
 }
@@ -54,10 +54,22 @@ img {
     border-radius: 90px;
     padding: 40px;
     padding-bottom: 20px;
-    padding-right: 0;
     margin: 0;
-    
-    
+}
+
+table img {
+    width: 250px;
+    height: auto;
+    border-radius: 90px;
+    padding: 40px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+table p{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
 }
 
 .rectangle_info{
@@ -66,7 +78,7 @@ img {
     align-items: flex-start;
 
     width: 1395px;
-    height: 1200px;
+    height: 4700px;
     border-radius: 90px;
     background-color: rgba(0, 0, 0, 0.508);
     backdrop-filter: blur(20px);
@@ -77,24 +89,26 @@ img {
 
 .part_img{
     display: flex;
-    gap:30px;
+    gap:10px;
     order:1;
-    
 }
-
 
 .part_text{
     flex: 1;
-    gap: 30px;
+    gap: 10px;
     order: 3;
-    flex: 1;
     padding: 0;
-    margin: 20px;
-    
-
+    margin-right: 40px;
+    margin-left: 0px;
+    margin-top: 20px;
 }
+
+.part_text h1 {
+    margin-bottom: 0;
+}
+
 .table{
-    order:4;
+    order: 4;
 }
 
 table {
@@ -107,16 +121,11 @@ table {
 }
 
 
-
-
 table td {
     padding: 5px;
     border: 1px solid;
     
 }
-/*justify-content: space-between;
-    float:right; 
-*/
 
 footer {
     margin-top: auto;
